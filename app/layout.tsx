@@ -1,3 +1,4 @@
+import "../styles/global.css";
 import Navigation from "../app/navigation";
 export const metadata = {
   title: 'Next.js',
