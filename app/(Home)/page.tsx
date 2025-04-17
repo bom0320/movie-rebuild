@@ -1,22 +1,15 @@
-"use client"
-import { useEffect, useState } from "react"
 
-export default function HomePage() {
-    const [isLoading, setIsLoading] = useState(true);
-    const [movies, setMovies] = useState();
+const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
 
-    const getMovies = async () => {
-        const response = await fetch("https://nomad-movies.nomadcoders.workers.dev/movies");
-        const json = await response.json();
-        setMovies(json);
-        setIsLoading(false);
-    }
+export async function getMovies() {
+    const response = await fetch(API_URL);
+    const json = await response.json();
+    return json;
+}
 
-    useEffect(() => {
-        getMovies();
-    }, [])
-
+export default async function HomePage() {
+    const movies = await getMovies();
     return <div>
-        {isLoading ? "Loading..." : JSON.stringify(movies)}
+        {JSON.stringify(movies)}
     </div>
 }
