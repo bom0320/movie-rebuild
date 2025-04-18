@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Movie from "../../components/movie";
 
 export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
 
@@ -12,9 +13,9 @@ export default async function HomePage() {
     const movies = await getMovies();
     return <div>
         {movies.map((movie) =>
-            <li key={movie.id}>
-                <Link href={`/movies/${movie.id}`}>{movie.title}</Link>
-            </li>
+            <div>
+                <Movie key={movie.id} id={movie.id} title={movie.title} poster_path={movie.poster_path} />
+            </div>
         )}
     </div>
 }
