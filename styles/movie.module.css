@@ -2,6 +2,7 @@
     display: grid;
     grid-template-rows: 1fr auto;
     gap: 25px;
+    place-items: center;
 }
 
 .movie img {
