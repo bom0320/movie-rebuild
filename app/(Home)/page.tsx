@@ -1,5 +1,5 @@
 import Movie from "../../components/movie";
-
+import styles from "../../styles/home.module.css";
 export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
 
 async function getMovies() {
@@ -11,7 +11,7 @@ async function getMovies() {
 export default async function HomePage() {
     const movies = await getMovies();
     return (
-        <div>
+        <div className={styles.movie}>
             {movies.map((movie) => (
                 <Movie
                     key={movie.id}
