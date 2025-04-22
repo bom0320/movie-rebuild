@@ -8,8 +8,11 @@ export default function Movie({ title, id, poster_path }) {
     const onClick = () => {
         router.push(`/movies/${id}`);
     }
-    return <div className={styles.movie}>
-        <img src={poster_path} alt={title} onClick={onClick} />
-        <Link prefetch href={`/movies/${id}`}>{title}</Link>
+    return <div className={styles.group}>
+        <div className={styles.movie}>
+            <img src={poster_path} alt={title} onClick={onClick} />
+            <Link prefetch href={`/movies/${id}`}>{title}</Link>
+        </div>
     </div>
+
 }

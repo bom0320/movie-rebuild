@@ -1,6 +1,5 @@
 .nav {
     position: fixed;
-    background-color: #2d2d2d;
     padding: 20px 0px;
     border-radius: 60px;
     margin: 0 auto;
@@ -25,5 +24,5 @@
 }
 
 .nav ul li:hover {
-    transform: scale(2.05);
+    transform: scale(0.97);
 }
