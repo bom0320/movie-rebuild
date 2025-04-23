@@ -1,0 +1,45 @@
+.container_main {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.main_h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.main_h2 {
+    font-size: 28px;
+    font-weight: 600;
+    border-bottom: 1px solid #dddcdc;
+    padding-bottom: 16px;
+}
+
+.container {
+    margin-bottom: 60px;
+}
+
+.container h2 {
+    margin-bottom: 26px;
+}
+
+.container p {
+
+    margin-bottom: 40px;
+}
+
+.skills_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tag {
+    padding: 8px 14px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
