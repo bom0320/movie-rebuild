@@ -58,3 +58,17 @@
 .h2 {
     color: rgb(72, 72, 72);
 }
+
+.link_group {
+    display: flex;
+    gap: 10px;
+}
+
+.link {
+    border: solid rgb(222, 222, 222);
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 24%;
+}
