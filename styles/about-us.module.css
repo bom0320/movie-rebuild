@@ -43,3 +43,17 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+
+.button {
+    border: solid rgb(200, 200, 200);
+    border-radius: 12px;
+    padding: 12px;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:hover {
+    transform: scale(0.97);
+}

@@ -35,7 +35,7 @@ export default function AboutUsPage() {
                 <p >Github:</p>
                 <a
                     href="https://github.com/bom0320/movie-rebuild"
-                    className={styles.github_button}
+                    className={styles.button}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -46,7 +46,7 @@ export default function AboutUsPage() {
                 </a>
 
                 <p>참고 강의:</p>
-                <a href="https://nomadcoders.co/nextjs-for-beginners">NextJS 14 시작하기 - 노마드 코더 Nomad Coders</a>
+                <a className={styles.button} href="https://nomadcoders.co/nextjs-for-beginners">NextJS 14 시작하기 - 노마드 코더 Nomad Coders</a>
             </div>
         </div>
     </>
