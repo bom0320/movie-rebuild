@@ -1,6 +1,22 @@
 import styles from "../../styles/about-us.module.css";
 
 export default function AboutUsPage() {
+    const skills = [
+        { name: "HTML", color: "#f94144" },
+        { name: "CSS", color: "#2196f3" },
+        { name: "Sass", color: "#e91e63" },
+        { name: "TailwindCSS", color: "#06b6d4" },
+        { name: "JavaScript", color: "#fbbf24" },
+        { name: "TypeScript", color: "#3b82f6" },
+        { name: "React", color: "#10b981" },
+        { name: "Svelte", color: "#f97316" },
+        { name: "htmx", color: "#64748b" },
+        { name: "Express", color: "#737373" },
+        { name: "NextJS", color: "#0f172a" },
+        { name: "NodeJS", color: "#86efac" },
+        { name: "Electron", color: "#67e8f9" },
+        { name: "Shopify", color: "#bbf7d0" },
+    ]
     return <>
         <div className={styles.container_main}>
 
@@ -14,20 +30,11 @@ export default function AboutUsPage() {
             <div className={styles.container}>
                 <h2 className={styles.main_h2}>Skills & Experiences</h2>
                 <div className={styles.skills_wrapper}>
-                    <span className={styles.tag} style={{ backgroundColor: "#f94144" }}>HTML</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#2196f3" }}>CSS</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#e91e63" }}>Sass</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#06b6d4" }}>TailwindCSS</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#fbbf24" }}>JavaScript</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#3b82f6" }}>TypeScript</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#10b981" }}>React</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#f97316" }}>Svelte</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#64748b" }}>htmx</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#737373" }}>Express</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#0f172a" }}>NextJS</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#86efac" }}>NodeJS</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#67e8f9" }}>Electron</span>
-                    <span className={styles.tag} style={{ backgroundColor: "#bbf7d0" }}>Shopify</span>
+                    {skills.map((skill, index) => (
+                        <span key={index} className={styles.tag} style={{ backgroundColor: skill.color }}>
+                            {skill.name}
+                        </span>
+                    ))}
                 </div>
             </div>
             <div className={styles.container}>
